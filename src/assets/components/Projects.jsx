@@ -1,4 +1,5 @@
-import { projectLinks } from "../../Links";
+import { Title, projectLinks } from '../../Links';
+
 
 const Projects = () => {
   const spanTwo = { '--i': '2' };
@@ -8,7 +9,7 @@ const Projects = () => {
     <>
       <section className="projects show-animate" id="projects">
         <h2>
-          Recent <span>Projects</span>
+          <Title firstWord='Recent' secondWord='Project' />
           <span className="animate" style={spanTwo}></span>
         </h2>
 
@@ -16,16 +17,11 @@ const Projects = () => {
           {projectLinks.map((link) => {
             return (
               <div className="project-box" key={link.id}>
-                <img
-                  src={link.img}
-                  alt={link.title}
-                />
+                <img src={link.img} alt={link.title} />
                 <div className="project-layer">
                   <h4>{link.title}</h4>
-                  <p>
-                    {link.description}
-                  </p>
-                  <a href={link.link}>
+                  <p>{link.description}</p>
+                  <a href={link.link} target="_blank">
                     <i className={link.icon}></i>
                   </a>
                 </div>

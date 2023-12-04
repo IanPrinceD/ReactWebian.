@@ -1,4 +1,5 @@
 import profileTwo from '../images/profile 2.jpg';
+import { Button, Title } from '../../Links';
 
 const About = () => {
   const spanTwo = { '--i': '2' };
@@ -10,7 +11,7 @@ const About = () => {
     <>
       <section className="about show-animate" id="about">
         <h2>
-          About <span>Me</span>
+          <Title firstWord='About' secondWord='Me' />
           <span className="animate" style={spanTwo}></span>
         </h2>
 
@@ -35,8 +36,11 @@ const About = () => {
             <span className="animate" style={spanThree}></span>
           </p>
           <div className="btn-box btns">
-            <a href="/assests/Ian Dumanhug.pdf" download="Ian_Dumanhug_CV.pdf">
-              <button>Download CV</button>
+            <a
+              href="/assests/images/Ian Dumanhug.pdf"
+              download="Ian_Dumanhug_CV.pdf"
+            >
+              <Button word='Download CV' />
             </a>
             <span className="animate" style={spanThree}></span>
           </div>

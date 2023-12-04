@@ -1,4 +1,4 @@
-import { skillLinks } from '../../Links';
+import { Title, skillLinks } from '../../Links';
 
 const Skills = () => {
   const spanTwo = { '--i': '2' };
@@ -9,7 +9,7 @@ const Skills = () => {
     <>
       <section className="skill show-animate" id="skill">
         <h2>
-          My <span>Skills</span>
+          <Title firstWord='My' secondWord='Skills' />
           <span className="animate" style={spanTwo}></span>
         </h2>
 

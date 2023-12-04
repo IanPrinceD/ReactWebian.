@@ -1,3 +1,5 @@
+import { Button, Title } from "../../Links";
+
 const Contact = () => {
   const spanTwo = { '--i': '2' };
   const spanThree = { '--i': '3' };
@@ -7,7 +9,7 @@ const Contact = () => {
     <>
       <section className="contact show-animate" id="contact">
         <h2>
-          Contact <span>Me!</span>
+          <Title firstWord='Contact' secondWord='Me' />
           <span className="animate" style={spanTwo}></span>
         </h2>
         <form
@@ -39,7 +41,7 @@ const Contact = () => {
             <span className="animate" style={spanFour}></span>
           </div>
           <div className="btn-box btns">
-            <button type="submit">Submit</button>
+            <Button word='Submit' type='submit' />
             <span className="animate" style={spanThree}></span>
           </div>
         </form>

@@ -30,7 +30,16 @@ export const skillLinks = [
     category: 'Technical Skills',
     skills: ['HTML5', 'CSS3', 'Javascript', 'PHP'],
   },
-  { id: 2, category: 'Professional Skills', skills: ['Communication Skills', 'Leadership', 'Teamwork', 'Time Management'] },
+  {
+    id: 2,
+    category: 'Professional Skills',
+    skills: [
+      'Communication Skills',
+      'Leadership',
+      'Teamwork',
+      'Time Management',
+    ],
+  },
 ];
 
 export const projectLinks = [
@@ -62,3 +71,19 @@ export const projectLinks = [
     icon: 'fa-brands fa-github',
   },
 ];
+
+export const Title = ({ firstWord, secondWord }) => {
+  return (
+    <>
+      {firstWord} <span>{secondWord}</span>
+    </>
+  );
+};
+
+export const Button = ({ word, type }) => {
+  return (
+    <>
+      <button type={type}>{word}</button>
+    </>
+  );
+};
