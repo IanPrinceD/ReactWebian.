@@ -1,3 +1,5 @@
+import { skillLinks } from '../../Links';
+
 const Skills = () => {
   const spanTwo = { '--i': '2' };
   const spanThree = { '--i': '3' };
@@ -12,56 +14,30 @@ const Skills = () => {
         </h2>
 
         <div className="skills-row">
-          <div className="skills-column">
-            <h3>
-              Technical Skills<span className="animate" style={spanFour}></span>
-            </h3>
-            <div className="skill-container">
-              <div className="skill-content">
-                <div className="skills">
-                  <div className="skills-bullet">
-                    <p>HTML</p>
+          {skillLinks.map((link) => {
+            return (
+              <div className="skills-column" key={link.id}>
+                <h3>
+                  {link.category}
+                  <span className="animate" style={spanFour}></span>
+                </h3>
+                <div className="skill-container">
+                  <div className="skill-content">
+                    <div className="skills">
+                      {link.skills.map((skills, index) => {
+                        return (
+                          <div key={index} className="skills-bullet">
+                            <p>{skills}</p>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
-                  <div className="skills-bullet">
-                    <p>CSS</p>
-                  </div>
-                  <div className="skills-bullet">
-                    <p>Javascript</p>
-                  </div>
-                  <div className="skills-bullet">
-                    <p>PHP</p>
-                  </div>
+                  <span className="animate" style={spanThree}></span>
                 </div>
               </div>
-              <span className="animate" style={spanThree}></span>
-            </div>
-          </div>
-
-          <div className="skills-column">
-            <h3>
-              Professional Skills
-              <span className="animate" style={spanFour}></span>
-            </h3>
-            <div className="skill-container">
-              <div className="skill-content">
-                <div className="skills">
-                  <div className="skills-bullet">
-                    <p>Communication Skills</p>
-                  </div>
-                  <div className="skills-bullet">
-                    <p>Leadership</p>
-                  </div>
-                  <div className="skills-bullet">
-                    <p>Teamwork</p>
-                  </div>
-                  <div className="skills-bullet">
-                    <p>Time Management</p>
-                  </div>
-                </div>
-              </div>
-              <span className="animate" style={spanThree}></span>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </section>
     </>

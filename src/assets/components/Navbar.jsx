@@ -1,3 +1,5 @@
+import { pageLinks } from "../../Links";
+
 const Navbar = () => {
   const spanOne = { '--i': '1' }
   const spanTwo = { '--i': '2' };
@@ -15,14 +17,14 @@ const Navbar = () => {
         </i>
 
         <nav className="navbar">
-          <a href="#home" className="active">
-            Home
-          </a>
-          <a href="#about">About</a>
-          <a href="#skill">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-
+          {pageLinks.map((link) => {
+            return(
+              <a key={link.id} href={link.link} className={link.class}>
+                {link.text}
+              </a>
+            )
+          }
+          )}
           <span className="active-nav"></span>
           <span className="animate animated" style={spanTwo}></span>
         </nav>

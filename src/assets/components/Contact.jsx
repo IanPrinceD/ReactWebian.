@@ -11,7 +11,7 @@ const Contact = () => {
           <span className="animate" style={spanTwo}></span>
         </h2>
         <form
-          onsubmit="emailSend(); reset(); return false;"
+          onSubmit="emailSend(); reset(); return false;"
           className="contact-content"
           name="submit-to-google-sheet"
         >

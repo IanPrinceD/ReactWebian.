@@ -575,7 +575,7 @@ footer .copyright {
 .logo,
 .navbar,
 .home .home-img,
-.project-container .project-content {
+.project-container {
   position: relative;
 }
 

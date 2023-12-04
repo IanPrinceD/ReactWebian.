@@ -1,4 +1,6 @@
 import profile from '../images/profile.png';
+import { socialLinks } from '../../Links';
+
 
 const Home = () => {
   const spanTwo = { '--i': '2' };
@@ -32,21 +34,16 @@ const Home = () => {
             <span className="animate" style={spanFive}></span>
           </div>
           <ul className="social-links">
-            <li>
-              <a href="#">
-                <i className="fa-brands fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fa-brands fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fa-brands fa-github-alt"></i>
-              </a>
-            </li>
+            {socialLinks.map((link) => {
+              return (
+                <li key={link.id}>
+                  <a href={link.link} target="_blank">
+                    <i className={link.icon}></i>
+                  </a>
+                </li>
+              );
+            }
+            )}
             <span className="animate" style={spanSix}></span>
           </ul>
         </div>
