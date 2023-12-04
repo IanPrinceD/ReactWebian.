@@ -1,5 +1,5 @@
 import profile from '../images/profile.png';
-import { socialLinks } from '../../Links';
+import { Button, socialLinks } from '../../Links';
 
 
 const Home = () => {
@@ -29,8 +29,8 @@ const Home = () => {
             <span className="animate" style={spanFour}></span>
           </p>
           <div className="btn-box">
-            <button>Hire Me</button>
-            <button>Let's Talk</button>
+            <Button word="Hire Me" />
+            <Button word="Let's Talk" />
             <span className="animate" style={spanFive}></span>
           </div>
           <ul className="social-links">
@@ -42,8 +42,7 @@ const Home = () => {
                   </a>
                 </li>
               );
-            }
-            )}
+            })}
             <span className="animate" style={spanSix}></span>
           </ul>
         </div>
