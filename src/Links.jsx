@@ -1,3 +1,5 @@
+import TRJA from './assets/images/TRJA.jpg'
+
 export const pageLinks = [
   { id: 1, link: '#home', text: 'Home', class: 'active' },
   { id: 2, link: '#about', text: 'About' },
@@ -48,7 +50,7 @@ export const projectLinks = [
     img: 'https://images.unsplash.com/photo-1542744095-291d1f67b221?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VifGVufDB8fDB8fHww',
     title: 'Neoeye Optical Clinic',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, et veritatis ratione nihil aperiam atque!',
+      'The project aims to create a user-friendly website for an Eye Clinic, enabling patients to easily book appointments, reserve eye products, and engage with customer service through a responsive chat system.',
     link: 'https://github.com/FurankuJosepho/NeoEyePHP',
     icon: 'fa-brands fa-github',
   },
@@ -57,13 +59,13 @@ export const projectLinks = [
     img: 'https://images.unsplash.com/photo-1542744095-291d1f67b221?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VifGVufDB8fDB8fHww',
     title: 'Byte Genius',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, et veritatis ratione nihil aperiam atque!',
+      'User-friendly e-commerce for computer enthusiasts. Browse products, prices, and reviews with easy online transactions. Enjoy after-sale services and chat support for assistance.',
     link: 'https://github.com/IanPrinceD/bGen',
     icon: 'fa-brands fa-github',
   },
   {
     id: 3,
-    img: 'https://images.unsplash.com/photo-1542744095-291d1f67b221?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VifGVufDB8fDB8fHww',
+    img: TRJA,
     title: 'The Red Jumpsuit Apparatus',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, et veritatis ratione nihil aperiam atque!',

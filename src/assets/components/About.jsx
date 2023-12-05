@@ -1,4 +1,4 @@
-import profileTwo from '../images/profile 2.jpg';
+import profileTwo from '../images/profile_pic.jpg';
 import { Button, Title } from '../../Links';
 
 const About = () => {
@@ -11,7 +11,7 @@ const About = () => {
     <>
       <section className="about show-animate" id="about">
         <h2>
-          <Title firstWord='About' secondWord='Me' />
+          <Title firstWord="About" secondWord="Me" />
           <span className="animate" style={spanTwo}></span>
         </h2>
 
@@ -26,13 +26,15 @@ const About = () => {
             Web Developer!<span className="animate" style={spanFour}></span>
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
-            dolorum eligendi perspiciatis voluptatem enim inventore soluta
-            exercitationem veritatis quisquam, repellat nemo eius distinctio.
-            Obcaecati rem placeat, excepturi quidem, omnis nostrum ut
-            perferendis saepe fugiat minus vero sequi! Non corporis voluptatum
-            maiores magni quisquam repudiandae! Temporibus aliquam error eius id
-            molestias?
+            A highly skilled and creative Web Developer, I bring a wealth of
+            experience in working with advanced web technologies, including
+            HTML, CSS, Javascript, PHP, and MySQL. My expertise extends to both
+            independent projects, where I have demonstrated a proven ability to
+            self-manage, as well as collaborative team settings, where I excel
+            in effective cooperation and contribution. My multifaceted skill set
+            allows me to navigate seamlessly through the intricacies of web
+            development, ensuring the successful implementation of innovative
+            and efficient solutions.
             <span className="animate" style={spanThree}></span>
           </p>
           <div className="btn-box btns">
@@ -40,7 +42,7 @@ const About = () => {
               href="/assests/images/Ian Dumanhug.pdf"
               download="Ian_Dumanhug_CV.pdf"
             >
-              <Button word='Download CV' />
+              <Button word="Download CV" />
             </a>
             <span className="animate" style={spanThree}></span>
           </div>
