@@ -1,4 +1,4 @@
-import profile from '../images/profile.png';
+import profile from '../images/hero_img.png';
 import { Button, socialLinks } from '../../Links';
 
 
@@ -24,8 +24,7 @@ const Home = () => {
             <span className="animate" style={spanTwo}></span>
           </h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
-            enim esse velit corporis quo iste nisi ex? Officia, nihil voluptate!
+            Passionate Web Developer from Bulacan, Philippines, blending local inspiration into digital innovation. Committed to mastering web development for seamless online experiences.
             <span className="animate" style={spanFour}></span>
           </p>
           <div className="btn-box">
